@@ -93,7 +93,7 @@ app.post("/weather", function(req, res) {
     res.send("<h1>Error: " + error.message + "</h1>");
   });
 });
-
-app.listen(3000, function() {
+const port = process.env.PORT || 3000;
+app.listen(port, function() {
   console.log("Server started running on port 3000");
 });
