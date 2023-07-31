@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap);
+        body {
+            font-family: Roboto, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        label {
+            font-size: 18px;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .weather-container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+        }
+        
+        .weather-icon {
+            width: 100px;
+            float: left;
+        }
+        
+        .weather-description {
+            margin-left: 110px;
+            font-size: 18px;
+        }
+        
+        .weather-details {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        
+        .weather-temperature {
+            float: left;
+        }
+        
+        .weather-humidity {
+            float: right;
+        }
+        
+        .weather-wind {
+            clear: both;
+        }
+        
+        .weather-image {
+            width: 100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form action="/weather" method="post">
+        <label for="cityInput">City Name:</label>
+        <input type="text" name="cityName" id="cityInput">
+        <button type="submit">Go</button> 
+    </form>
+</body>
+</html>
